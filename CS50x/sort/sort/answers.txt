@@ -1,0 +1,19 @@
+sort1 uses: bubble sort
+
+How do you know?: Because, when comparing bubble sort with selection sort, bubble short has a Ω lower than selection sorts's Ω (Ω(n) < Ω(n^2)). This indicates that
+when the files were already sorted, bubble sort would have a smaller processing time. Which whom, has been sucessfully making the same thing at a smaller time.
+
+sort2 uses: merge sort
+
+How do you know?: Because, when the files that were randomized and reversed, the sort2 had the fastest times among the others.
+Making him the most efficient one, counting the size of the file and the time processed. From the times, sort3 consistently has the lowest times for all input types and sizes,
+indicating that it is likely the merge sort algorithm.
+
+sort3 uses: selection sort
+
+How do you know?: It has a time complexity of O(n^2), so it is expected to be slower for larger inputs compared to other algorithms.
+Looking at the times, sort1 consistently has the highest times for all input types and sizes, especially for reversed inputs.
+
+
+
+

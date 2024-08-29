@@ -1,0 +1,17 @@
+NAMES = {
+        "Eduardo": '45 99822-0343',
+        "Vinicius": '45 99946-4961',
+        "Anna": '45 99911-0053'
+    }
+
+for contact in NAMES.items():
+        print(f"Name: {contact[0]} || Phone: {contact[1]}")
+
+NAMES = [
+        { 'name': "Eduardo", 'phone': '45 99822-0343'},
+        { 'name': "Vinicius", 'phone': '45 99946-4961'},
+        { 'name': "Anna", 'phone': '45 99911-0053'}
+    ]
+
+for contact in NAMES:
+        print(f"Name: {contact['name']} || Phone: {contact['phone']}")

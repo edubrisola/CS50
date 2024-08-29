@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function checkAnswer(button, correctness)
+            {
+                if (correctness === 'correct')
+                {
+                    button.style.backgroundColor = 'green';
+                    document.getElementById('part1-result').textContent = 'Correct!';
+                }
+
+                else
+                {
+                    button.style.backgroundColor = 'red';
+                    document.getElementById('part1-result').textContent = 'Incorrect';
+                }
+
+            }
+
+            function checkFreeResponse() {
+                const input = document.getElementById('name');
+                const result = document.getElementById('part2-result');
+                if (input.value.toLowerCase() === 'j.r.r. tolkien' || input.value.toLowerCase() === 'jrr tolkien' || input.value.toLowerCase() === 'john ronald reuel tolkien' || input.value.toLowerCase() === 'tolkien')
+                {
+                    input.classList.add('correct');
+                    result.textContent = 'Correct!';
+                }
+                else
+                {
+                    input.classList.add('incorrect');
+                    result.textContent = 'Incorrect';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2 class="font">Part 1: Multiple Choice </h2>
+                <hr>
+                <h3 class="font"> What is the Largest Country in the World? </h3>
+
+                <button onclick="checkAnswer(this, 'correct')"> Russia </button>
+                <button onclick="checkAnswer(this, 'incorrect')"> Brazil </button>
+                <button onclick="checkAnswer(this, 'incorrect')"> USA </button>
+                <button onclick="checkAnswer(this, 'incorrect')"> China </button>
+                <button onclick="checkAnswer(this, 'incorrect')"> Canada </button>
+
+            </div>
+
+            <div class="section">
+                <h2 class="font">Part 2: Free Response</h2>
+                <hr>
+                <h3 class="font"> Who wrote The Lord Of The Rings? </h3>
+                <div class="input-container">
+                    <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+                    <input type="submit" onclick="checkFreeResponse()">
+                </div>
+                <p class="font" id="part2-result"></p>
+            </div>
+        </div>
+    </body>
+</html>

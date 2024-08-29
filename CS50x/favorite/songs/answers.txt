@@ -1,0 +1,18 @@
+Spotify Wrapped is an annual campaign that showcases a personalized summary of a listener's music habits over the past year. It provides insights into listening trends, favorite songs and artists, and other interesting statistics. The data and analysis that go into creating Spotify Wrapped are extensive and multifaceted. Let's reflect on how Spotify might use the data provided in the songs.db database to characterize listeners' habits in their Wrapped campaign.
+
+
+# Song Attributes:
+
+Danceability, Energy, Valence: These attributes give insights into the mood and style of the songs a user listens to. For example, a high danceability score might indicate that the user enjoys more dance-oriented music.
+Tempo and Duration: Tempo can be used to understand the pace of the music preferred by the listener, while duration gives insights into whether the listener prefers longer or shorter songs.
+
+# Artist Information:
+
+Tracking the artists a user frequently listens to can help identify their favorite artists and genres. For instance, identifying users who listen to a lot of Post Malone or Drake.
+
+# Listening Patterns:
+
+By analyzing the times when users listen to music, Spotify can identify peak listening hours, which can be used to provide personalized listening summaries like "You enjoy music the most during your morning commute."
+Engagement with Collaborative Tracks:
+
+Identifying songs that feature other artists (e.g., tracks with "feat.") can provide insights into users' preferences for collaborations and introduce them to other artists they might like.

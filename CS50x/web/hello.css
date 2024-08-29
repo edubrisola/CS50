@@ -1,0 +1,18 @@
+@font-face
+{
+    font-family: 'YourFontName'; /*a name to be used later*/
+    src: url('https://kinsta.com/blog/web-safe-fonts/#8-century-gothic'); /*URL to font*/
+}
+div
+{
+     font-size: large;
+     text-align: center;
+     font-family: "Ubuntu", sans-serif;
+}
+
+.front
+{
+     color: red;
+     font-family: "Ubuntu", sans-serif;
+     font-size:20px;
+ }

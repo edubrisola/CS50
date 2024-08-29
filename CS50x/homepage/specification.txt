@@ -1,0 +1,5 @@
+about.html
+curriculum.html
+index.html
+social_media.html
+styles.css
